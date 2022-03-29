@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: OPERATION-SERVICE
+  datasource:
+    url: jdbc:h2:mem:operationMsDB
+  cloud:
+    discovery:
+      enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8889/eureka
+server:
+  port: 8082
+
